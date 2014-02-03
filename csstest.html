@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Brock's CSS test page</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+    var currentTime=new Date();
+    var month=currentTime.getMonth()+1;
+    var day=currentTime.getDate();
+    var year=currentTime.getFullYear();
+    document.write(month+"/"+day+"/"+year+" ");
+    var hours=currentTime.getHours();
+    var minutes=currentTime.getMinutes();
+    if(minutes<10){
+		minutes="0"+minutes;
+    }
+    document.write(hours + ":" + minutes + " ");
+    if(hours>11){
+	document.write("PM");
+	} else {
+	document.write("AM");
+	}
+    </script>
+</head>
+
+<body>
+    <h1>Brock's CSS test page</h1>
+    <p id="dateandtime"></p>
+    <a href="#moss"><h2>Go to moss image</h2></a>
+    <a href="jqmworkingfeed.html"><h2>jQuery mobile test site</h2></a>
+<div>
+    <h2>What this is</h2>
+<p>This web site is about <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em> <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></p>
+</div>
+<div>
+<h2>Reasons</h2>
+
+<ul>
+    <li>To (re)learn HTML</li>
+    <li>
+        To demonstrate the difference between ordered and unordered lists
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ol>
+    </li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+</ul>
+
+</div>
+<div id="glossary">
+<h1>Glossary text</h1>
+<dl>
+    <dt>Definition term</dt>
+    <dd>Definition text</dd>
+
+</dl>
+</div>
+<div id="top">
+
+    <h1>Using class selector on this div for different styling. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div>
+<table id="rst">
+<caption>Demonstrating rowspan</caption>
+    <tr>
+        <th>Column 1 heading</th>
+        <th>Column 2 heading</th>
+        <th>Column 3 heading</th>
+    </tr>
+    <tr>
+        <td>Row 2, cell 1</td>
+        <td colspan="2">Row 2, cell 2, also spanning Row 2, cell 3</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Row 3, cell 1, also spanning Row 4, cell 1</td>
+        <td>Row 3, cell 2</td>
+        <td>Row 3, cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 4, cell 2</td>
+        <td>Row 4, cell 3</td>
+    </tr>
+</table>
+<table id="rmt">
+<caption>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</caption>
+    <colgroup>
+        <col>
+        <col class="alternative">
+        <col>
+    </colgroup>
+    <tr>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+    </tr>
+</table>
+<table>
+    <caption>Demonstrating thead, tfoot, tbody tags</caption>
+    <thead>
+        <tr>
+            <td>Header 1</td>
+            <td>Header 2</td>
+            <td>Header 3</td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+            <td>Footer 3</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <!-- etc. -->
+    </tbody>
+</table>
+</div>
+
+<div>
+<form action="contactus.php" method="post">
+
+    <p>Name:</p>
+    <p><input type="text" name="name" value="Your name"></p>
+
+    <p>Comments: </p>
+    <p><textarea name="comments" rows="5" cols="20">Your comments</textarea></p>
+    
+    <p><input type="submit"></p>
+
+</form>
+
+</div>
+
+<div id="moss">
+<p>Welcome to moss</p>
+<img src="moss.jpg" > 
+</div>
+
+<div>
+<h3>Author contact details</h3>
+<address>
+<ul>
+    <li>0123-456-7890</li>
+    <li>author_dude@noplaceinteresting.com</li>
+    <li>http://www.noplaceinteresting.com/contactme/</li>
+</ul>
+</address>
+</div>
